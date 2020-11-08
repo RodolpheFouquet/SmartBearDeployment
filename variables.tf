@@ -15,6 +15,9 @@ variable "database_password" {
   description = "The user password for the Production database"
 }
 
+variable "database_size" {
+}
+
 variable "secret_key_base" {
   description = "The Rails secret key for production"
 }

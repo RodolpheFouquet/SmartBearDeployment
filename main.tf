@@ -17,3 +17,14 @@ module "networking" {
   availability_zones   = local.availability_zones
 }
 
+module "database" {
+  source            = "./modules/database"
+  database_name     = var.database_name
+  database_username = var.database_username
+  environment       = var.environment
+  allocated_storage = var.database_size
+  database_password = var.database_password
+  subnet_ids        = module.networking.private_subnets_id
+  vpc_id            = module.networking.vpc_id
+  instance_class    = "db.t2.micro"
+}
