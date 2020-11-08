@@ -1,12 +1,10 @@
 region                        = "eu-west-1"
 
-/* rds */
 database_name      = "smartbear_prod"
 database_username  = "paddington"
 database_password  = "bearswanttokillyou"
 database_size      = "10"
 
-/* secret key */
 secret_key_base    = "t3epWiEX3picyoiGXdyzhTH4jzA8FI6gDt1wwGOC5EaXGLzICLgnnW52DQX6z9b0LlFBj0ttCWmIFdxmOKsCCRym0rLOEtoCLfYq"
 
 environment = "production"
